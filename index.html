@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Capitán de Yate</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    select, button { margin: 1rem 0; padding: 0.5rem; }
+    .question { margin: 1rem 0; }
+    .correct { color: green; font-weight: bold; }
+    .incorrect { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Simulador de Examen: Capitán de Yate</h1>
+  <label for="modulo">Selecciona módulo:</label>
+  <select id="modulo">
+    <option value="bloque1_navegacion">Teoría de Navegación</option>
+    <option value="bloque3_meteorologia">Meteorología</option>
+    <option value="bloque4_ingles">Ingles</option>
+  </select>
+  <button onclick="cargarModulo(document.getElementById('modulo').value)">Generar Preguntas</button>
+  <form id="testForm"></form>
+  <button onclick="verificarRespuestas()">Verificar</button>
+  
+  <script src="app_principal.js"></script>
+
+</body>
+</html>
